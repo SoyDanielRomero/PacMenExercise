@@ -1,6 +1,7 @@
 # Pacman Challenge 👨‍💻
+<img src='img/PacMan1.png'>
 
-This is an exercise developed during MIT xPro Professional Certificate in Coding: Full Stack Development with MERN. It is about creating objects dinamycally with javascript when a button is clicked, detect the edges to move PacMens of the screen and changing the images of the Pacman Character.
+This is an exercise developed during MIT xPro Professional Certificate in Coding: Full Stack Development with MERN. It is about creating objects dynamically with javascript when a button is clicked, store them in an array, move them around and detect the container edges to make the PacMens bounce between them.
 
 ## Installation 🔧
 
@@ -8,12 +9,17 @@ To install this proyect in your machine, follow these steps:
 
 1. Download or clone the project
 2. Go to content folder and add it to your code editor tool
-3. Open PacMan.html
+3. Open index.html
 4. Enjoy and leave a comment :)
 
 ## Usage 🚀
 
-To see this project running in live action please go to [Index.html](https://soydanielromero.github.io/projects/2-MIT-PacManChallenge/PacMan.html) and follow the instructions.
+1. Create as many PacMen as you like by clicking the Add a PacMen button
+2. Make them move and bounce by clicking the Start Game button
+3. Hit Reset button if you want to clear the screen
+
+
+[Live Demo](https://soydanielromero.github.io/PacMen/)
 
 ## Support 🦸‍♂️️
 
