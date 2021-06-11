@@ -1,0 +1,40 @@
+h1,h2,h3,h4,h5,h6,th{
+    font-family: "Montserrat",sans-serif;
+}
+body{
+    font-family: "Open Sans",sans-serif;
+}
+
+header{
+    background-image: url(../img/PacMan1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -400px;
+    
+}
+
+.bgimg {
+    min-height: 200px;
+    backdrop-filter: blur(4px);
+}
+
+.bgimg .main-title, .bgimg .subtitle {
+    color: #fff;
+    text-shadow: 2px 2px 2px #2B2B2B;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+}
+#canvas{
+    position: relative;
+    background-color: aquamarine; 
+    width:1200; 
+    height:90%; 
+    padding:0;
+    overflow: hidden;
+}
+@media screen {
+    
+}
