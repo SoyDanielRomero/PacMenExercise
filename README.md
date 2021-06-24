@@ -57,18 +57,13 @@ SOFTWARE.
 - Root
     - index.html
     - LICENSE
+    - pacmen.js
+    - project-details.html
     - README.md
-- /img
-    - Ghost1.png
-    - Ghost2.png
-    - Ghost3.png
-    - Ghost4.png
+- /images
     - PacMan1.png
     - PacMan2.png
     - PacMan3.png
     - PacMan4.png
-- /scripts
-    - pacman.js
-- /source
-    - LICENSE
-    - starter01.html
+- /styles
+    - styles.css
