@@ -1,4 +1,4 @@
-# Pacmen Challenge 👨‍💻
+# Pacmen Exercise 👨‍💻
 <img src='img/PacMan1.png'>
 
 This is an exercise developed during MIT xPro Professional Certificate in Coding: Full Stack Development with MERN. It is about creating objects dynamically with javascript when a button is clicked, store them in an array, move them around and detect the container edges to make the PacMens bounce between them.
@@ -7,7 +7,7 @@ This is an exercise developed during MIT xPro Professional Certificate in Coding
 
 To install this proyect in your machine, follow these steps:
 
-1. Download or clone the project
+1. Download or clone the repository
 2. Go to content folder and add it to your code editor tool
 3. Open index.html
 4. Enjoy and leave a comment :)
@@ -27,7 +27,8 @@ If you have any question please send an email to: [hola@soydanielromero.com](mai
 
 ## Roadmap 🗺
 
-This is a coding exercise and there won't be any fixes or improvements.
+- Responsive support
+- Pacmen change face direction when hit x axis limit
 
 ## License information 👨‍⚖️
 

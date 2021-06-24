@@ -1,68 +1,137 @@
 <html>
-    <head>
-        <!-- Bootsrap -->
+  <head>
+    <!-- Bootsrap -->
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <!-- Google fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-  <link rel="stylesheet" href="./styles/styles.css" />
-  <!-- Bootsrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    </head>
-<script src="./scripts/pacmen.js"></script>
-<script>
-
-</script>
-<body>
-    
-    <header >
-        <nav class="navbar container-fluid justify-content-evenly align-items-center" style="background-color: #f36; height:10%;">
-            <div class="justify-content-center col-md-3">
-                <a class="nav-brand" href="../../../../index.html"><img src="../../../../assets/img/logo-daniel-romero-white.svg" alt="Logo Daniel Romero Blanco" srcset="" width="300"></a>
-            </div>
-            <div class="justify-content-evenly col-md-3">
-                <button class="btn btn-dark btn-outline" type="button" data-bs-toggle="modal" data-bs-target="#howToUse"><i class="bi bi-eyeglasses"></i> Instructions</button>
-                
-                <a onclick='makeOne()' class="btn btn-dark btn-outline" type="button"><i class="bi bi-joystick"></i> Add a PacMen</a>
-                <a onclick='update()' class="btn btn-dark btn-outline" type="button"><i class="bi bi-power"></i> Start Game</a>
-                <a onclick='window.location.reload()' class="btn btn-dark btn-outline" type="button"><i class="bi bi-arrow-clockwise"></i> Home</a>
-                <a onclick='window.location.reload()' class="btn btn-dark btn-outline" type="button"><i class="bi bi-arrow-clockwise"></i> Restart</a>
-            </div>
-        </nav>  
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <!-- Bootsrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />  
+  </head>
+  <script src="./pacmen.js"></script>
+  <script></script>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="navbar-brand d-flex col-5 justify-content-center">
+            <a class="navbar-brand" href="https://soydanielromero.github.io"><img
+              src="../../../../assets/img/logo-daniel-romero-white.svg"
+              alt="Logo Daniel Romero Blanco"
+              srcset=""
+              width="300"
+            /></a>
+          </div>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div class="navbar-nav d-flex justify-content-evenly col-7">
+                <a
+                  class="btn-sm btn-dark btn-outline"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#howToUse"
+                  ><i class="bi bi-eyeglasses"></i> Instructions</a
+                >
+                <a
+                  onclick="makeOne()"
+                  class="btn-sm btn-dark btn-outline"
+                  type="button"
+                  ><i class="bi bi-joystick"></i> Add a PacMen</a
+                >
+                <a
+                  onclick="update()"
+                  class="btn-sm btn-dark btn-outline"
+                  type="button"
+                  ><i class="bi bi-power"></i> Start Game</a
+                >
+                <a
+                  onclick="window.location.reload()"
+                  class="btn-sm btn-dark btn-outline"
+                  type="button"
+                  ><i class="bi bi-arrow-clockwise"></i> Restart</a
+                >
+                <a
+                  href="https://soydanielromero.github.io"
+                  class="btn-sm btn-dark btn-outline"
+                  type="button"
+                  ><i class="bi bi bi-house-fill"></i> Home</a
+                >
+              </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main id="canvas" class="container" >
-        <div id='game' style="position: relative;"></div>
+    <!-- Main Content -->
+    <main id="canvas" class="container">
+      <div id="game" style="position: relative"></div>
     </main>
-    <sidebar>
-        <nav class="navbar container-fluid justify-content-center" style="background-color: #f36; height:10%;">
-
-        </nav>
-    </sidebar>
     <!-- Modal -->
-    <div class="modal fade" id="howToUse" tabindex="-1" aria-labelledby="howToUseLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="howToUseLabel">How To Use?</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <ol>
-                  <li>Create as many PacMen as you like by clicking the Add a PacMen button</li>
-                  <li>Make them move and bounce by clicking the Start Game button</li>
-                  <li>Hit Reset button if you want to clear the screen</li>
-              </ol>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+    <div
+      class="modal fade"
+      id="howToUse"
+      tabindex="-1"
+      aria-labelledby="howToUseLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="howToUseLabel">How To Use?</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ol>
+              <li>
+                Create as many PacMen as you like by clicking the Add a PacMen
+                button
+              </li>
+              <li>
+                Make them move and bounce by clicking the Start Game button. Everytime you click on Start Game button speed will increase.
+              </li>
+              <li>Hit Reset button if you want to clear the screen</li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
       </div>
+    </div>
+    <!-- Jquery files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

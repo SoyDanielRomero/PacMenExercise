@@ -1,7 +1,7 @@
 var pos = 0;
 const pacArray = [
-    ['./img/PacMan1.png', './img/PacMan2.png'],
-    ['./img/PacMan3.png', './img/PacMan4.png']
+    ['./images/PacMan1.png', './images/PacMan2.png'],
+    ['./images/PacMan3.png', './images/PacMan4.png']
 ];
 var direction = 0;
 let pacMen = []; // This array holds all the pacmen
@@ -21,7 +21,7 @@ function makePac() {
     let game = document.getElementById('game');
     let newimg = document.createElement('img');
     newimg.style.position = 'absolute';
-    newimg.src = './img/PacMan1.png';
+    newimg.src = './images/PacMan1.png';
     newimg.width = 100;
     console.log(newimg);
     //
@@ -58,7 +58,7 @@ function checkCollisions(item) {
     //
     let container = document.getElementById('canvas');
     container.offsetWidth =  80+"%";
-    container.offsetHeight = 90+"%";
+    container.offsetHeight = 85+"%";
     let canvasWidth = Number(container.offsetWidth);
     let canvasHeight = Number(container.offsetHeight);
     let canvasTop = 0;
