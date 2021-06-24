@@ -19,7 +19,7 @@ To install this proyect in your machine, follow these steps:
 3. Hit Reset button if you want to clear the screen
 
 
-[Live Demo](https://soydanielromero.github.io/PacMen/)
+[Live Demo](https://soydanielromero.github.io/PacMenExercise/)
 
 ## Support 🦸‍♂️️
 
