@@ -1,5 +1,5 @@
 # Pacmen Exercise 👨‍💻
-<img src='img/PacMan1.png'>
+<img src='images/PacMan1.png'>
 
 This is an exercise developed during MIT xPro Professional Certificate in Coding: Full Stack Development with MERN. It is about creating objects dynamically with javascript when a button is clicked, store them in an array, move them around and detect the container edges to make the PacMens bounce between them.
 
